@@ -1,18 +1,271 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Лет ми спик фром май харт</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <!-- Поле для фильтрации по городу -->
-        <input
-            type="text"
-            placeholder="Город отправления"
-            value=""
-            onkeyup="this.setAttribute('value', this.value)">
-
-        <!-- Здесь применять вашу самую сильную магию -->
+<head>
+    <meta charset="utf-8">
+    <title>Лет ми спик фром май харт</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!— Поле для фильтрации по городу —>
+    <input
+        type="text"
+        placeholder="Город отправления"
+        value=""
+        onkeyup="this.setAttribute('value', this.value)">
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Arrival/Departure</th>
+                    <th>Flight</th>
+                    <th colspan="2">Airline</th>
+                    <th>Plane</th>
+                    <th>From/To</th>
+                    <th>Terminal</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Type</th>
+                    <th>Arrival/Departure</th>
+                    <th>Flight</th>
+                    <th colspan="2">Airline</th>
+                    <th>Plane</th>
+                    <th>From/To</th>
+                    <th>Terminal/Row</th>
+                    <th>Status</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Departure</td>
+                    <td>00:05</td>
+                    <td>SQ225</td>
+                    <td>
+                        <img alt="SINGAPORE AIRLINES LTD"
+                            src="http://apps.changiairportgroup.com/fids/images/airlines/SQ.gif">
+                    </td>
+                    <td>SINGAPORE AIRLINES LTD</td>
+                    <td>Airbus A330-300</td>
+                    <td>Perth</td>
+                    <td>T3/03</td>
+                    <td>Departed</td>
+                </tr>
+                <tr>
+                    <td class="A">Departure</td>
+                    <td>00:05</td>
+                    <td>TK7916</td>
+                    <td>
+                        <img alt="TURKISH AIRLINES"
+                            src="http://apps.changiairportgroup.com/fids/images/airlines/TK.gif">
+                    </td>
+                    <td>TURKISH AIRLINES</td>
+                    <td>Airbus A330-300</td>
+                    <td>Perth</td>
+                    <td>T3/03</td>
+                    <td>Departed</td>
+                </tr>
+                <tr>
+                    <td class="A">Departure</td>
+                    <td>00:10</td>
+                    <td>OZ6782</td>
+                    <td>
+                        <img alt="ASIANA AIRLINES"
+                            src="http://apps.changiairportgroup.com/fids/images/airlines/OZ.gif">
+                    </td>
+                    <td>ASIANA AIRLINES</td>
+                    <td>Airbus A330-300</td>
+                    <td>Seoul</td>
+                    <td>T3/03</td>
+                    <td>Departed</td>
+                </tr>
+                <tr>
+                    <td class="A">Departure</td>
+                    <td>00:20</td>
+                    <td>SQ336</td>
+                    <td>
+                        <img alt="CEBU PACIFIC AIR"
+                            src="http://apps.changiairportgroup.com/fids/images/airlines/5J.gif">
+                    </td>
+                    <td>CEBU PACIFIC AIR</td>
+                    <td>Airbus A320</td>
+                    <td>Cebu</td>
+                    <td>T2/08</td>
+                    <td>Departed</td>
+                </tr>
+                <tr>
+                    <td>Departure</td>
+                    <td>03:00</td>
+                    <td>MU5094</td>
+                    <td>
+                        <img alt="CHINA EASTERN AIRLINES"
+                            src="http://apps.changiairportgroup.com/fids/images/airlines/MU.gif">
+                    </td>
+                    <td>CHINA EASTERN AIRLINES</td>
+                    <td>Airbus A320</td>
+                    <td>
+                        Lanzhou<br>
+                        via Kunming
+                    </td>
+                    <td>T3/10</td>
+                    <td>Cancelled</td>
+                </tr>
+                <tr>
+                    <td>Departure</td>
+                    <td>05:20</td>
+                    <td>NH802</td>
+                    <td>
+                        <img alt="ALL NIPPON AIRWAYS (NH)"
+                            src="http://apps.changiairportgroup.com/fids/images/airlines/NH.gif">
+                    </td>
+                    <td>ALL NIPPON AIRWAYS (NH)</td>
+                    <td>Boeing 777-300ER</td>
+                    <td>Tokyo (Narita)</td>
+                    <td>T2/07</td>
+                    <td>Departed</td>
+                </tr>
+                <tr>
+                    <td>Departure</td>
+                    <td>05:20</td>
+                    <td>AC6247</td>
+                    <td>
+                        <img alt="AIR CANADA"
+                            src="http://apps.changiairportgroup.com/fids/images/airlines/AC.gif">
+                    </td>
+                    <td>AIR CANADA</td>
+                    <td>Boeing 777-300ER</td>
+                    <td>Tokyo (Narita)</td>
+                    <td>T2/07</td>
+                    <td>Departed</td>
+                </tr>
+                <tr>
+                    <td>Departure</td>
+                    <td>05:20</td>
+                    <td>SQ5904</td>
+                    <td>
+                        <img alt="SINGAPORE AIRLINES LTD"
+                            src="http://apps.changiairportgroup.com/fids/images/airlines/SQ.gif">
+                    </td>
+                    <td>SINGAPORE AIRLINES LTD</td>
+                    <td>Boeing 777-300ER</td>
+                    <td>Tokyo (Narita)</td>
+                    <td>T2/07</td>
+                    <td>Departed</td>
+                </tr>
+                <tr>
+                    <td>Departure</td>
+                    <td>05:20</td>
+                    <td>UA7934</td>
+                    <td>
+                        <img alt="UNITED AIRLINES INC"
+                            src="http://apps.changiairportgroup.com/fids/images/airlines/UA.gif">
+                    </td>
+                    <td>UNITED AIRLINES INC</td>
+                    <td>Boeing 777-300ER</td>
+                    <td>Tokyo (Narita)</td>
+                    <td>T2/07</td>
+                    <td>Departed</td>
+                </tr>
+                <tr>
+                    <td>Arrival</td>
+                    <td>00:05</td>
+                    <td>TZ301</td>
+                    <td>
+                        <img alt="SCOOt"
+                            src="http://apps.changiairportgroup.com/fids/images/airlines/TZ.gif">
+                    </td>
+                    <td>SCOOT</td>
+                    <td>Boeing 787-9</td>
+                    <td>Bangkok (Don Mueang)</td>
+                    <td>T2</td>
+                    <td>Cancelled</td>
+                </tr>
+                <tr>
+                    <td>Arrival</td>
+                    <td>00:20</td>
+                    <td>UA895</td>
+                    <td>
+                        <img alt="UNITED AIRLINES INC"
+                            src="http://apps.changiairportgroup.com/fids/images/airlines/UA.gif">
+                    </td>
+                    <td>UNITED AIRLINES INC</td>
+                    <td>Boeing 777-200</td>
+                    <td>
+                        Chicago<br>
+                        via Hong Kong
+                    </td>
+                    <td>T3</td>
+                    <td>Landed</td>
+                </tr>
+                <tr>
+                    <td>Arrival</td>
+                    <td>00:50</td>
+                    <td>MI987</td>
+                    <td>
+                        <img alt="SILKAIR (SINGAPORE) PTE LTD"
+                            src="http://apps.changiairportgroup.com/fids/images/airlines/MI.gif">
+                    </td>
+                    <td>SILKAIR (SINGAPORE)</td>
+                    <td>Boeing 777-200</td>
+                    <td>Wuhan</td>
+                    <td>T2</td>
+                    <td>Landed</td>
+                </tr>
+                <tr>
+                    <td>Arrival</td>
+                    <td>01:40</td>
+                    <td>TR2069</td>
+                    <td>
+                        <img alt="TIGERAIR SINGAPORE"
+                            src="http://apps.changiairportgroup.com/fids/images/airlines/TR.gif">
+                    </td>
+                    <td>TIGERAIR SINGAPORE</td>
+                    <td>Airbus A319</td>
+                    <td>Hong Kong</td>
+                    <td>T2</td>
+                    <td>Landed</td>
+                </tr>
+                <tr>
+                    <td>Arrival</td>
+                    <td>01:45</td>
+                    <td>TR2727</td>
+                    <td>
+                        <img alt="TIGERAIR SINGAPORE"
+                            src="http://apps.changiairportgroup.com/fids/images/airlines/TR.gif">
+                    </td>
+                    <td>TIGERAIR SINGAPORE</td>
+                    <td>Airbus A320</td>
+                    <td>Manila</td>
+                    <td>T2</td>
+                    <td>Landed</td>
+                </tr>
+                <tr>
+                    <td>Arrival</td>
+                    <td>04:40</td>
+                    <td>6E53</td>
+                    <td>
+                        <img alt="INDIGO"
+                            src="http://apps.changiairportgroup.com/fids/images/airlines/6E.gif">
+                    </td>
+                    <td>INDIGO</td>
+                    <td>Airbus A320</td>
+                    <td>Chennai</td>
+                    <td>T2</td>
+                    <td>Landed</td>
+                </tr>
+            </tbody>
+        </table>
+        <form>
+            <fieldset>
+                <label for="Email">Email</label>
+                <input id="Email" type="email" required><br>
+                <label for="Address">Телефон</label>
+                <input id="Address" type="tel" required><br>
+            </fieldset>
+            <button type="submit" method="POST" enctype="multipart/form-data">
+                Отправить данные о рейсе на телефон
+            </button>
+        </form>
     </body>
 </html>
