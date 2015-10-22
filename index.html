@@ -263,9 +263,10 @@
             <input id="Email" type="email" required><br>
                 <label for="Phone">Телефон</label>
                 <input id="Phone"
-                       type="tel"
-                       pattern="^(\+(?=\d{1,3})\d{1,3}|\d{1,3})?[\- ]?((\((?=\d{3}\))\d{3}\)|\d{3})[\- ]?)+[\d\- ]{7}$"
-                       required><br>
+                    type="tel"
+                    placeholder="+79193865003"
+                    pattern="^(\+(?=\d{1,3})\d{1,3}|\d{1,3})?\d{3}\d{7}$"
+                    required><br>
             </fieldset>
             <button type="submit" method="POST" enctype="multipart/form-data">
                 Отправить данные о рейсе на телефон
