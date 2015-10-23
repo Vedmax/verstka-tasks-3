@@ -66,56 +66,16 @@ form:valid button
     margin: 10px;
 }
 
-.citySearch[value="Perth"] ~ table tbody tr:not([data-city="Perth"])
-{
-    display: none;
-}
-
-.citySearch[value="Seoul"] ~ table tbody tr:not([data-city="Seoul"])
-{
-    display: none;
-}
-
-.citySearch[value="Cebu"] ~ table tbody tr:not([data-city="Cebu"])
-{
-    display: none;
-}
-
-.citySearch[value="Lanzhou"] ~ table tbody tr:not([data-city="Lanzhou"])
-{
-    display: none;
-}
-
-.citySearch[value="Tokyo"] ~ table tbody tr:not([data-city="Tokyo"])
-{
-    display: none;
-}
-
-.citySearch[value="Bangkok"] ~ table tbody tr:not([data-city="Bangkok"])
-{
-    display: none;
-}
-
-.citySearch[value="Chicago"] ~ table tbody tr:not([data-city="Chicago"])
-{
-    display: none;
-}
-
-.citySearch[value="Wuhan"] ~ table tbody tr:not([data-city="Wuhan"])
-{
-    display: none;
-}
-
-.citySearch[value="Manila"] ~ table tbody tr:not([data-city="Manila"])
-{
-    display: none;
-}
-
-.citySearch[value="Chennai"] ~ table tbody tr:not([data-city="Chennai"])
-{
-    display: none;
-}
-
+.citySearch[value="Perth"] ~ table tbody tr:not([data-city="Perth"]),
+.citySearch[value="Seoul"] ~ table tbody tr:not([data-city="Seoul"]),
+.citySearch[value="Cebu"] ~ table tbody tr:not([data-city="Cebu"]),
+.citySearch[value="Lanzhou"] ~ table tbody tr:not([data-city="Lanzhou"]),
+.citySearch[value="Tokyo"] ~ table tbody tr:not([data-city="Tokyo"]),
+.citySearch[value="Bangkok"] ~ table tbody tr:not([data-city="Bangkok"]),
+.citySearch[value="Chicago"] ~ table tbody tr:not([data-city="Chicago"]),
+.citySearch[value="Wuhan"] ~ table tbody tr:not([data-city="Wuhan"]),
+.citySearch[value="Manila"] ~ table tbody tr:not([data-city="Manila"]),
+.citySearch[value="Chennai"] ~ table tbody tr:not([data-city="Chennai"]),
 .citySearch[value="Hong Kong"] ~ table tbody tr:not([data-city="Hong Kong"])
 {
     display: none;
