@@ -80,3 +80,9 @@ form:valid button
 {
     display: none;
 }
+
+input[value="departure"]:checked ~ table tbody tr[data-direction="arrival"],
+input[value="arrival"]:checked ~ table tbody tr[data-direction="departure"]
+{
+    display: none;
+}
